@@ -16,7 +16,7 @@ public class ParameterizedTest {
 
     @Test(dataProvider = "Дата провайдер")
     public void testAdd(int a, int b, int expectedSum) {
-        Assert.assertEquals(add(a, b), expectedSum, "Сумма должна быть равна " + expectedSum);
+        Assert.assertEquals(add(a, b), expectedSum, a + " + " + b + " должно быть равно " + expectedSum);
     }
 
     private int add(int a, int b) {
